@@ -1,0 +1,27 @@
+# permissions for end users to view packagerevisions.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: packagerevision-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: porchapi
+    app.kubernetes.io/part-of: porchapi
+    app.kubernetes.io/managed-by: kustomize
+  name: packagerevision-viewer-role
+rules:
+- apiGroups:
+  - porch.s3wong.io
+  resources:
+  - packagerevisions
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - porch.s3wong.io
+  resources:
+  - packagerevisions/status
+  verbs:
+  - get

@@ -1,0 +1,12 @@
+apiVersion: porch.s3wong.io/v1alpha1
+kind: PackageRevision
+metadata:
+  labels:
+    app.kubernetes.io/name: packagerevision
+    app.kubernetes.io/instance: packagerevision-sample
+    app.kubernetes.io/part-of: porchapi
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: porchapi
+  name: packagerevision-sample
+spec:
+  # TODO(user): Add fields here
