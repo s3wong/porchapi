@@ -24,7 +24,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	porchv1alpha1 "s3wong/porchapi/api/v1alpha1"
+	porchv1alpha1 "github.com/s3wong/porchapi/api/v1alpha1"
 )
 
 // PackageRevisionReconciler reconciles a PackageRevision object

@@ -31,8 +31,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	porchv1alpha1 "s3wong/porchapi/api/v1alpha1"
-	"s3wong/porchapi/controllers"
+	porchv1alpha1 "github.com/s3wong/porchapi/api/v1alpha1"
+	"github.com/s3wong/porchapi/controllers"
 	//+kubebuilder:scaffold:imports
 )
 

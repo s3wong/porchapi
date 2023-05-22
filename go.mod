@@ -1,4 +1,4 @@
-module s3wong/porchapi
+module github.com/s3wong/porchapi
 
 go 1.19
 
